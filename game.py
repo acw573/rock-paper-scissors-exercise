@@ -3,7 +3,19 @@
 
 import random
 
-print("Rock, Paper, Scissors, Shoot!")
+import os 
+
+import dotenv
+
+dotenv.load_dotenv()
+
+
+player_name = os.getenv("player_name")
+print ("Hello ",player_name,"! Welcome!")
+
+
+
+print("Time to play Rock, Paper, Scissors, Shoot!")
 
 user_choice = input("Please choose one of 'rock','paper','scissors': ")
 
