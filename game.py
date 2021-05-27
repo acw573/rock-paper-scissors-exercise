@@ -28,5 +28,27 @@ valid_options = ["rock","paper","scissors"]
 computer_choice = random.choice(valid_options)
 print("COMPUTER CHOICE: ",computer_choice)
 
+if user_choice == "rock":
+    if computer_choice == "rock":
+        print("IT'S A TIE")
+    elif computer_choice == "paper":
+        print("MAYBE NEXT TIME. THE COMPUTER WON!")
+    elif computer_choice == "scissors":
+        print("YOU WON! AMAZING!")
+elif user_choice == "paper":
+    if computer_choice == "rock":
+        print("YOU WON! AMAZING!")
+    elif computer_choice == "paper":
+        print("IT'S A TIE")
+    elif computer_choice == "scissors":
+        print("MAYBE NEXT TIME. THE COMPUTER WON!")
+elif user_choice == "scissors":
+    if computer_choice == "rock":
+        print("MAYBE NEXT TIME. THE COMPUTER WON!")
+    elif computer_choice == "paper":
+        print("YOU WON! AMAZING!")
+    elif computer_choice == "scissors":
+        print("IT'S A TIE")
+
 
 print("THIS IS THE END OF OUR GAME. PLEASE PLAY AGAIN.")
